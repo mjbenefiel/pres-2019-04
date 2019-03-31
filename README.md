@@ -1,5 +1,5 @@
 ![Example of the slide deck in action](./thumbnail3.gif)
-
+1
 # mdx-deck Template
 
 A basic boilerplate to use with [mdx-deck](https://github.com/jxnblk/mdx-deck) with all components and layouts. Different themes and configurations available as feature branches.
