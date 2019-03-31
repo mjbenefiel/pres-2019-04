@@ -4,7 +4,7 @@ import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
 export { default as theme } from './theme'
 
 <Head>
-  <title>Tealium Demo</title>
+  <title>Tealium Presentation</title>
   <meta itemprop="name" content="Presentation Title" />
   <meta itemprop="description" content="My demo for a great company" />
 </Head>
@@ -18,17 +18,27 @@ export { default as theme } from './theme'
 ---
 
 
-<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'8vw', fontWeight: 'bold' }}>Tealium Demo</ol>
-<ol style={{ margin: '25px 0', color:'#007CC2', fontSize:'4vw' }}>Michael Benefiel</ol>
-<ol style={{ margin: '25px 0', color:'#007CC2', fontSize:'2vw' }}>April 1, 2019</ol>
+<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'8vw', fontWeight: 'bold' }}>Welcome!</ol>
+<ol style={{ margin: '25px 0', color:'#007CC2', fontSize:'4vw' }}>I'm Michael Benefiel</ol>
+<ol style={{ margin: '25px 0', color:'#007CC2', fontSize:'2vw' }}>It's April 1, 2019</ol>
 
 
 
 ---
 <ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'8vw', fontWeight: 'bold' }}>Table of Contents</ol>
-<ol style={{ margin: '25px 0', color:'#007CC2', fontSize:'4vw' }}>Michael Benefiel</ol>
+
+<ul>
+  <Appear>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Tealium iQ Questions</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>AudienceStream Exercises</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Extra Innings</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Questions</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Thank You</ol>
+  </Appear>
+</ul>
+
 ---
-<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'8vw', fontWeight: 'bold' }}>TealiumIQ</ol>
+<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'8vw', fontWeight: 'bold' }}>Tealium iQ</ol>
 <ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'4vw' }}>Question #1</ol>
 
 <ul>
@@ -51,7 +61,7 @@ export { default as theme } from './theme'
 <ul>
   <Appear>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Set up a localhost server with an alias </ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Log into TiQ and set up a Google Universal Analytics tag </ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Log into TiQ and set up a Google Analytics tag (analytics.js)</ol>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>On your localhost webpage, use Google Analytics to trigger a click event on a link </ol>
   </Appear>
 </ul>
@@ -79,9 +89,10 @@ export { default as theme } from './theme'
 
 <ol style={{ margin: '5px 0', color:'#00A8B6', fontSize:'6vw', fontWeight: 'bold' }}>Setting up GA Tag in TiQ</ol>
 
----
 
-<ol style={{ margin: '5px 0px', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>Logging into TiQ</ol>
+---
+<ol style={{ margin: '5px 0px', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>Quick Aside</ol>
+<ol style={{ margin: '5px 0px', color:'#007CC2', fontSize:'4vw',  }}>Logging into TiQ</ol>
 
 <ul>
   <Appear>
@@ -171,10 +182,10 @@ export default FullScreenCode
 
 <ul>
   <Appear>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>The console is your best friend: verify page_type</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Once in AudienceStream, click Attributes: add attribute</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create custom attribute with number data type: increment by 1</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create Category Browser Badge attribute to be assigned after threshold is met</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>The console is your best friend: verify page_type (UDO)</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Once in AudienceStream, click "Attributes": add attribute</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create page_type: category "number" attribute: increment category page visits by one</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create "Category Browser" Badge attribute to be assigned after threshold is met</ol>
   </Appear>
 </ul>
 
@@ -201,7 +212,7 @@ export default FullScreenCode
   <Appear>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create Product SKU "set of strings" attribute</ol>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create product_type: product "number" attribute to increment page visits by one</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create Favorite Product Badge attribute to be assigned if someone views product five or more times</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create "Favorite Product" Badge attribute to be assigned if someone views product five or more times</ol>
     
   </Appear>
 </ul>
@@ -249,9 +260,9 @@ export default FullScreenCode
 <ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>Fire once per session?</ol>
 <ul>
   <Appear>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Tealium now sets a "Session Start" cookie called "utag_main__ss." This is set to "1" on the first page of the visit and "0" on subsequent pages.</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Add a Data Source called "utag_main__ss" and set the Type to "First Party Cookie."</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Use this in the Load Rule to check if the cookie equals "1".</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Tealium now sets a "Session Start" cookie called "utag_main__ss." This is set to "1" on the first page of the visit and "0" on subsequent pages</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Add a Data Source called "utag_main__ss" and set the Type to "First Party Cookie"</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Use this in the Load Rule to check if the cookie equals "1"</ol>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>This requires version 4.26 or later of the utag.js file</ol>
   </Appear>
 </ul>
@@ -271,11 +282,23 @@ export default FullScreenCode
 <ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>My example</ol>
 <ul>
   <Appear>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>I created a Category Browsers audience for individuals who have viewed a category page five or more times. I'd set up a connector with Facebook Ads and target Category Browsers with advertisements tailored with the products of the category they viewed five or more times (ie books, dolls, clothing, etc.)</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>I created a "Category Browsers" audience for individuals who have viewed a category page five or more times. I'd set up a connector with Facebook Ads and target Category Browsers with advertisements tailored with the products of the category they viewed five or more times (ie, books, dolls, clothing, etc.)</ol>
   </Appear>
 </ul>
 ---
-<img height="500px" width="600px" src="/category_audience.jpg" />
+<img height="500px" width="600px" src="https://github.com/mjbenefiel/pres-2019-04/blob/master/category_audience.jpg?raw=true" />
 
 ```notes
 - <img height="500px" width="500px" src="/category_audience.jpg" />
+---
+<ol style={{ margin: '5px 0', color:'#00A8B6', fontSize:'6vw', fontWeight: 'bold' }}>Questions?</ol>
+---
+<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>Thank you for this opportunity</ol>
+<ul>
+  <Appear>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Slideshow: https://mjb-presentation.netlify.com</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Portfolio: https://mjbenefiel.github.io</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>GitHub: https://github.com/mjbenefiel</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>LinkedIn: https://www.linkedin.com/in/michaeljbenefiel</ol>
+  </Appear>
+</ul>
