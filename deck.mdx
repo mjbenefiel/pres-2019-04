@@ -217,7 +217,7 @@ export default FullScreenCode
 <ul>
   <Appear>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Can you walk us through how to trigger a basic modal on your webpage?</ol>
-    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>We have a Doubleclick Floodlight tag that we only want to fire once per session. Is there a way to do this in Tealium?</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>We have a DoubleClick Floodlight tag that we only want to fire once per session. Is there a way to do this in Tealium?</ol>
     <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Create an audience based off of information available to the site and explain what you would use this audience for.</ol>
   
   </Appear>
@@ -243,3 +243,15 @@ export default FullScreenCode
 ```notes
 - <img height="500px" width="500px" src="/ec1_collage.jpg" />
 ```
+---
+<ol style={{ margin: '5px 0', color:'#00A8B6', fontSize:'6vw', fontWeight: 'bold' }}>DoubleClick Floodlight Tag</ol>
+---
+<ol style={{ margin: '5px 0', color:'#007CC2', fontSize:'6vw', fontWeight: 'bold' }}>Fire once per session?</ol>
+<ul>
+  <Appear>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Tealium now sets a "Session Start" cookie called "utag_main__ss." This is set to "1" on the first page of the visit and "0" on subsequent pages.</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Add a Data Source called "utag_main__ss" and set the Type to "First Party Cookie."</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>Use this in the Load Rule to check if the cookie equals "1".</ol>
+    <ol style={{ margin: '25px 0', color:'#959BA1', fontSize:'3vw' }}>This requires version 4.26 or later of the utag.js file</ol>
+  </Appear>
+</ul>
